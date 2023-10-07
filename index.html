@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <title>CASE STUDY GOOGLE LENS VS MOBILENET </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+        <u><h1 class="heading">CASE STUDY</h1></u>
+        <br><br>
+        <center>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+                <h4>GOOGLE LENS</h4>  
+                <br>
+                <h4>VS</h4>
+                <br>
+                <h4>MOBILENET MODEL</h4>
+                
+            </div>
+          </center>
+          <br><br>
+        <ol>
+           <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image-</b>
+                    <img src="water_bottle.png">
+                </li>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENSE</b> - 
+                    <span id="water_b_google">Water Bottle</span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>MOBILENET MODEL</b> - 
+                    <span id="water_b_mobilenet">Water Bottle</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - </h4>
+                    <h4 class="mini_result_water_bottle">There is a draw between both</h4>
+                </div>
+           </div> 
+        
+
+        
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="keyboard.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="keyboard_google">Key Board</span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="keyboard_mobilenet">Key Board, Keypad</span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <h4 class="mini_result_keyboard">There is a draw between both</h4>
+                 </div>
+            </div> 
+         
+
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="pen.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="pen_google">Pen</span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="pen_mobilenet">Syringe</span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <h4 class="mini_result_pen">Google Lense is more accurate</h4>
+                 </div>
+            </div> 
+         
+        
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="mouse.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="mouse_google">Mouse</span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="mouse_mobilenet">Mouse, Computer mouse</span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <h4 class="mini_result_mouse">There is a draw between both</h4>
+                 </div>
+            </div> 
+         
+
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="fan.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="fan_google">Fan</span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="fan_mobilenet">Combination Lock</span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <h4 class="mini_result_fan">Google Lense is more accurate</h4>
+                 </div>
+            </div> 
+         
+
+         
+            <div class="test_image_and_result col-xs-12">
+                 <li class="col-sm-4 col-xs-12">
+                     <b>Test Image-</b>
+                     <img src="shirt.png">
+                 </li>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>GOOGLE LENSE</b> - 
+                     <span id="shirt_google">Shirt</span>
+                 </h5>
+                 <h5 class="col-sm-4 col-xs-12">
+                     Output on <b>MOBILENET MODEL</b> - 
+                     <span id="shirt_mobilenet">Tee Shirt</span>
+                 </h5>
+ 
+                 <div class="mini_result col-xs-12">
+                     <h4>Result - </h4>
+                     <h4 class="mini_result_shirt">There is a draw between both</h4>
+                 </div>
+            </div> 
+         </ol
+         <div id="result">
+             <p>
+                 I have tested six images<br>
+                <b>GOOGLE LENSE</b> has predicted two of them more accurately. So according to my study <b>GOOGLE LENSE</b> is more accurate than <b>MOBILENET</b>.
+            </p>
+             
+         </div>
+    </center>
+    <div class="copy_right_footer">
+      Developed by - Diva
+    </div>
+  </body>
+
+</html>
+
+
